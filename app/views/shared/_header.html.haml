@@ -1,0 +1,20 @@
+.header-navigation
+  .primary__navigation
+    .primary__navigation__logo
+      = link_to image_tag("logo.jpg", class: "toplogo"), root_path
+      %p あなたの新体験が見つかるゲームコミュニティ
+    .primary__navigation__search
+      %input.primary__navigation__search__form-textbox{name: "keyword", placeholder: "ゲーム名を入力して下さい", type: "text", value: ""}
+      %button.primary__navigation__search__form-button{title: "検索", type: "submit"}
+        = icon('fas', 'search', class: "primary__navigation-search-icon")
+  .secondary__navigation
+    .secondary__navigation__tab
+      = link_to "マイページ", "#", class: "secondary__navigation__tab"
+    .secondary__navigation__tab
+      = link_to "ゲーム一覧", "#", class: "secondary__navigation__tab"
+    .secondary__navigation__tab
+      = link_to "コミュニティ", "#", class: "secondary__navigation__tab"
+    .secondary__navigation__tab
+      = link_to "大会", "#", class: "secondary__navigation__tab"
+    .secondary__navigation__tab
+      = link_to "ランキング", "#", class: "secondary__navigation__tab"

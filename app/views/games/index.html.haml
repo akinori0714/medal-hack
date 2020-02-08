@@ -1,1 +1,71 @@
 = render "shared/header"
+
+.main-content
+  .main-content__top
+    %iframe(width="900" height="415" src="https://www.youtube.com/embed/YbExkKjoskc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  .main-content__ranking
+    %h3 ランキング
+    .main-content__ranking__title
+      %h4 大乱闘スマッシュブラザーズ Medal Hack杯
+    .main-content__ranking__icon
+      .main-content__ranking__icon__first
+        %P 岡ひろみ
+        = image_tag('icon1.png', class: 'icon-image')
+      .main-content__ranking__icon__second
+        %P 元気100%
+        = image_tag('icon2.png', class: 'icon-image')
+      .main-content__ranking__icon__third
+        %P ジロリアン
+        = image_tag('icon3.png', class: 'icon-image')
+    .main-content__ranking__award
+      = image_tag('award.png', class: 'award-image')
+
+.main-advertising
+  .main-advertising__contents
+    .main-advertising__contents__notice
+      %h5 新着
+    .main-advertising__contents__image
+      = image_tag('CSR2.png', class: 'game-image')
+    .main-advertising__contents__comment
+      %p ハイクオリティな3D画面
+  .main-advertising__contents
+    .main-advertising__contents__notice
+      %h5 新着
+    .main-advertising__contents__image
+      = image_tag('POKEMONGO.png', class: 'game-image')
+    .main-advertising__contents__comment
+      %p 大人気ゲーム
+  .main-advertising__contents
+    .main-advertising__contents__notice2
+      %h5 大会
+    .main-advertising__contents__image
+      = image_tag('game7.png', class: 'game-image')
+    .main-advertising__contents__comment
+      %p 王者を狙え！
+  .main-advertising__contents
+    .main-advertising__contents__notice3
+      %h5 コミュニティ
+    .main-advertising__contents__image
+      = image_tag("荒野行動.png", class: 'game-image')
+    .main-advertising__contents__comment
+      %p オフ会開催中
+  .main-advertising__contents
+    .main-advertising__contents__notice3
+      %h5 コミュニティ
+    .main-advertising__contents__image
+      = image_tag('荒野行動.png', class: 'game-image')
+    .main-advertising__contents__comment
+      %p オフ会開催中
+
+= render "shared/sidebar"
+
+.main-community
+  %h3 人気コミュニティ
+  .main-community__range
+    = render "shared/main-community"
+    = render "shared/main-community"
+    = render "shared/main-community"
+
+= render "shared/news"
+
+= render "shared/top-games"

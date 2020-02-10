@@ -1,0 +1,80 @@
+= render "shared/header"
+
+.mypage
+  .mypage__upinfo
+    .mypage__upinfo__background
+      = image_tag('pic4.jpg', class: 'mypage-background')
+    .mypage__upinfo__user-icon
+      = image_tag('icon10.png', class: 'icon-image')
+    .mypage__upinfo__user-name
+      %p 猿ゲーマー
+    .mypage__upinfo__button
+      .mypage__upinfo__button__block
+        %button.mypage__upinfo__button__block__button{title: "ブロック", type: "submit"}
+      .mypage__upinfo__button__dm
+        %button.mypage__upinfo__button__dm__button{title: "DM", type: "submit"}
+          = icon('fas', 'mail', class: "mypage-dm")
+      .mypage__upinfo__button__follow
+        %button.mypage__upinfo__button__follow__button{title: "ブロック", type: "submit",}
+    .mypage__upinfo__introduce
+      %p 俺は人間から生まれたが、猿に進化した。退化ではない。進化である。猿界の原点にして頂点。そして今は、プロゲーマーと俺はなった。いや、猿ゲーマーとも言うべきか。
+    .mypage__upinfo__amount
+      .mypage__upinfo__amount__follow
+        %p 200
+        %p フォロー
+      .mypage__upinfo__amount__follow
+        %p 400
+        %p フォロワー
+    .mypage__upinfo__join
+      %h3 参加中コミュニティ 
+      %ul
+        %li
+          = image_tag('icon5.png', class: 'join-community-image')
+        %li
+          = image_tag('icon6.png', class: 'join-community-image')
+        %li
+          = image_tag('icon7.png', class: 'join-community-image')
+        %li
+          = image_tag('icon8.png', class: 'join-community-image')
+    .mypage__upinfo__join
+      %h3 押しゲーム
+      %ul
+        %li
+          = image_tag('pic1.jpg', class: 'join-game-image')
+        %li
+          = image_tag('pic2.jpg', class: 'join-game-image')
+        %li
+          = image_tag('pic3.jpg', class: 'join-game-image')
+        %li
+          = image_tag('pic4.jpg', class: 'join-game-image')
+        %li
+          = image_tag('pic5.png', class: 'join-game-image')
+    .mypage__upinfo__join
+      %h3 押しゲーム
+      %ul
+        %li
+          = image_tag('icon5.png', class: 'footprint-image')
+        %li
+          = image_tag('icon6.png', class: 'footprint-image')
+        %li
+          = image_tag('icon7.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+        %li
+          = image_tag('icon8.png', class: 'footprint-image')
+  
+  .mypage__downinfo
+    .mypage__downinfo__tab
+    .mypage__downinfo__community-select
+    .mypage__downinfo__input
+    .mypage__downinfo__feed
